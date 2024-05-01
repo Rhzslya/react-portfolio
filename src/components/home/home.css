@@ -1,0 +1,164 @@
+.home__container {
+  row-gap: 9rem;
+}
+.home__social-icon {
+  font-size: 1.5rem;
+  color: var(--title-color);
+}
+.home__content {
+  display: grid;
+  grid-template-columns: 116px repeat(2, 1fr);
+  align-items: center;
+  column-gap: 2rem;
+  padding-top: 9rem;
+}
+
+.home__img {
+  background: url(../../asset/Ryo-Profile.png);
+  background-size: cover;
+  background-position: center;
+  width: 300px;
+  height: 300px;
+  box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
+  order: 1;
+  justify-self: center;
+  animation: profile__animate 8s ease-in-out infinite 1s;
+  border-radius: 50%;
+}
+
+@keyframes profile__animate {
+  0% {
+    border-radius: 50%; /* Mulai dengan bentuk lingkaran */
+  }
+
+  25% {
+    border-radius: 50% 30% 70% 50%/70% 30% 60% 50%; /* Bentuk elips */
+  }
+
+  50% {
+    border-radius: 30% 50% 50% 70%/50% 60% 30% 50%; /* Bentuk lain */
+  }
+
+  75% {
+    border-radius: 50% 70% 30% 50%/60% 50% 70% 30%; /* Bentuk elips lagi */
+  }
+
+  100% {
+    border-radius: 50%; /* Kembali ke bentuk lingkaran */
+  }
+}
+.home__social {
+  display: grid;
+  grid-template-columns: max-content;
+  row-gap: 1rem;
+}
+
+.home__social-icon:hover {
+  color: #fff;
+  transition: all 0.5s;
+}
+
+.home__title {
+  font-size: var(--big-font-size);
+  margin-bottom: var(--mb-0-25);
+}
+
+.home__subtitle {
+  font-size: var(--h3-font-size);
+  color: var(--text-color);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-0-25);
+  position: relative;
+  height: 27px;
+}
+
+.home__description {
+  margin-bottom: var(--mb-2);
+}
+.home__scroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home__scroll-button {
+  color: var(--first-color);
+  display: inline-block;
+  animation: button-animate 2s ease-in-out infinite;
+}
+
+.button {
+  background-color: antiquewhite;
+}
+
+.button__icon {
+  width: 22px;
+  height: 22px;
+}
+
+@keyframes button-animate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0.25rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .home__content {
+    grid-template-columns: 100px repeat(2, 1fr);
+    column-gap: 1.25rem;
+  }
+
+  .home__description {
+    max-width: initial;
+    margin-bottom: var(--mb-2-5);
+  }
+
+  .home__img {
+    width: 250px;
+    height: 250px;
+    box-shadow: inset 0 0 0 8px rgb(255 255 255 / 30%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home__content {
+    grid-template-columns: 0.5fr 3fr;
+    padding-top: 3.5rem;
+  }
+
+  .home__img {
+    order: initial;
+    justify-self: center;
+  }
+
+  .home__img {
+    box-shadow: inset 0 0 0 6px rgb(255 255 255/30%);
+  }
+
+  .home__data {
+    grid-column: 1/3;
+  }
+
+  .home__scroll {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+}
+
+@media screen and (max-width: 350px) {
+  .home__img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .home__img {
+    box-shadow: inset 0 0 0 5px rgb(255 255 255/30%);
+  }
+}

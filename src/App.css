@@ -13,6 +13,8 @@
   --title-color:red
   --title-color-dark: #000000;
 
+  
+
   /* Font and typography */
   --body-font: "Noto Sans", sans-serif;
   --big-font-size: 3rem;
@@ -43,16 +45,15 @@
   --z-modal: 1000;
 }
 
+
 [data-theme="dark"] {
-  --body-color: #292c2e;
-  --second-color: #c5cbda;
-  --text-color: #f0f0f0;
-  --title-color: #f0f0f0;
+  --body-color: #292d3a;
+  --second-color: #292c2e;
+  --text-color: #ffffff;
+  --title-color:red
+  --title-color-dark: #000000;
+  
 }
-
-
-
-
 
 /* Responsive Typography */
 @media screen and (max-width: 968px) {
@@ -88,11 +89,9 @@ textarea {
 
 body {
   background-color: var(--body-color);
+  transition: .3s;
 }
 
-body[data-theme="dark"] {
-  background-color: red;
-}
 
 h1,
 h2,

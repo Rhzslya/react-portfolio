@@ -1,0 +1,50 @@
+.container__info {
+  display: flex;
+  justify-content: space-around;
+}
+
+.user-info {
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: var(--mb-0-5);
+}
+
+.local__time,
+.commit__code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.5rem;
+}
+
+.local__time-content span {
+  margin: 0 0.25rem;
+}
+
+.commit__code a {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Menghapus garis bawah default dari link */
+  color: var(--title-color); /* Ganti warna teks dengan warna yang diinginkan */
+}
+
+.commit__code a:hover {
+  color: red; /* Ganti warna teks saat hover */
+}
+
+/* Breakspoints */
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+  .user-info {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+}
+
+@media screen and (max-width: 350px) {
+}

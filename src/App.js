@@ -21,7 +21,12 @@ import {
   Route,
   NavLink,
 } from "react-router-dom";
+import DarkMode from "./components/dark-mode/DarkMode";
+import UserInfo from "./components/userinfo/UserInfo";
 export default function App() {
+  const [display, setDisplay] = useState("set-display");
+  // Toggle Menu Apps
+
   const [activeNav, setActiveNav] = useState("#home");
   // Change Background Header
   const [scrollHeader, setScrollHeader] = useState(false);
@@ -61,7 +66,7 @@ export default function App() {
 
       window.scrollTo({
         top: offsetTop,
-        behavior: "smooth", // Untuk efek animasi menggulir
+        behavior: "smooth",
       });
     }
   };
@@ -69,15 +74,15 @@ export default function App() {
   return (
     <Router>
       <>
+        <UserInfo />
         <Header
           scrollHeader={scrollHeader}
-          homeRef={homeRef}
-          aboutRef={aboutRef}
-          skillsRef={skillsRef}
-          projectRef={projectRef}
-          contactRef={contactRef}
           handleNavLinkClick={handleNavLinkClick}
-        />
+          display={display}
+          setDisplay={setDisplay}
+        >
+          <DarkMode display={display} setDisplay={setDisplay} />
+        </Header>
 
         <main className="main">
           <Home homeRef={homeRef}>

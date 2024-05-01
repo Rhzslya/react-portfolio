@@ -3,19 +3,15 @@ import "./header.css";
 import { useNavigate } from "react-router-dom";
 import { sectionsId } from "./sectionsId";
 import { iconsNav } from "./iconsNav";
-
+import DarkMode from "../dark-mode/DarkMode";
 export default function Header({
   scrollHeader,
-  homeRef,
-  aboutRef,
-  skillsRef,
-  projectRef,
-  contactRef,
   handleNavLinkClick,
+  children,
+  display,
+  setDisplay,
 }) {
-  // Show Toggle Menu
   const [Toggle, showMenu] = useState(false);
-  const [isDark, setIsDark] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeNav, setActiveNav] = useState("#home");
 
@@ -53,10 +49,7 @@ export default function Header({
   }, []);
 
   return (
-    <header
-      className={"header" + (scrollHeader ? " scroll-header" : "")}
-      data-theme={isDark ? "dark" : "light"}
-    >
+    <header className={"header" + (scrollHeader ? " scroll-header" : "")}>
       <nav className="nav container">
         <a href="" className="nav__logo">
           Seira
@@ -85,12 +78,22 @@ export default function Header({
           </ul>
           <i
             className="uil uil-times nav__close"
-            onClick={() => showMenu(!Toggle)}
+            onClick={() => {
+              setDisplay("set-display");
+              showMenu(!Toggle);
+            }}
           ></i>
         </div>
         <div className="nav__toggle">
-          <i className="uil uil-apps" onClick={() => showMenu(!Toggle)}></i>
+          <i
+            className="uil uil-apps"
+            onClick={() => {
+              setDisplay("");
+              showMenu(!Toggle);
+            }}
+          ></i>
         </div>
+        {children}
       </nav>
     </header>
   );

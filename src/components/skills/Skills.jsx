@@ -2,6 +2,8 @@ import React from "react";
 import "./skills.css";
 import Frontend from "./Frontend";
 import Backend from "./Backend";
+import SkillsCarousel from "./SkillsCarousel";
+
 export default function ({ skillsRef }) {
   return (
     <section className="skills section" id="skills" ref={skillsRef}>
@@ -12,6 +14,7 @@ export default function ({ skillsRef }) {
         <Frontend />
         <Backend />
       </div>
+      <SkillsCarousel />
     </section>
   );
 }

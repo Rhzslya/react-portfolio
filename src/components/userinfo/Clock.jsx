@@ -47,8 +47,8 @@ export default function ClockAndLocation() {
     <div className="local__time">
       <svg
         fill="#000000"
-        height="15px"
-        width="15px"
+        height="20px"
+        width="20px"
         version="1.1"
         id="Capa_1"
         xmlns="http://www.w3.org/2000/svg"

@@ -8,6 +8,7 @@
   position: fixed;
   bottom: 0;
   margin-bottom: var(--mb-0-5);
+  transition: all 0.5s;
 }
 
 .local__time,
@@ -16,6 +17,7 @@
   align-items: center;
   justify-content: center;
   margin: 0 0.5rem;
+  min-width: none;
 }
 
 .local__time-content span {
@@ -33,6 +35,10 @@
   color: red; /* Ganti warna teks saat hover */
 }
 
+.hide-user-info {
+  bottom: -30%;
+}
+
 /* Breakspoints */
 @media screen and (max-width: 992px) {
 }
@@ -41,9 +47,22 @@
   .user-info {
     margin-bottom: 3rem;
   }
+
+  .set-height {
+    margin-bottom: 222px;
+  }
 }
 
 @media screen and (max-width: 576px) {
+  .container__info {
+    display: block;
+  }
+
+  .local__time,
+  .commit__code {
+    justify-content: start;
+    margin-bottom: var(--mb-0-25);
+  }
 }
 
 @media screen and (max-width: 350px) {

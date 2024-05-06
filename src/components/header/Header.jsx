@@ -10,6 +10,8 @@ export default function Header({
   children,
   display,
   setDisplay,
+  height,
+  setHeight,
 }) {
   const [Toggle, showMenu] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -80,6 +82,7 @@ export default function Header({
             className="uil uil-times nav__close"
             onClick={() => {
               setDisplay("set-display");
+              setHeight("");
               showMenu(!Toggle);
             }}
           ></i>
@@ -88,6 +91,7 @@ export default function Header({
           <i
             className="uil uil-apps"
             onClick={() => {
+              setHeight("set-height");
               setDisplay("");
               showMenu(!Toggle);
             }}

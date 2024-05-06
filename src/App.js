@@ -23,8 +23,12 @@ import {
 } from "react-router-dom";
 import DarkMode from "./components/dark-mode/DarkMode";
 import UserInfo from "./components/userinfo/UserInfo";
+import ScrollDown from "./components/home/ScrollDown";
+import CircleType from "./components/home/CircleType";
+
 export default function App() {
   const [display, setDisplay] = useState("set-display");
+  const [height, setHeight] = useState("");
   // Toggle Menu Apps
 
   const [activeNav, setActiveNav] = useState("#home");
@@ -74,21 +78,28 @@ export default function App() {
   return (
     <Router>
       <>
-        <UserInfo />
+        <UserInfo height={height} setHeight={setHeight} />
         <Header
           scrollHeader={scrollHeader}
           handleNavLinkClick={handleNavLinkClick}
           display={display}
           setDisplay={setDisplay}
+          height={height}
+          setHeight={setHeight}
         >
           <DarkMode display={display} setDisplay={setDisplay} />
         </Header>
 
         <main className="main">
           <Home homeRef={homeRef}>
-            <Social />
-            <div className="home__img"></div>
-            <Data handleNavLinkClick={handleNavLinkClick} />
+            <div className="home__content grid">
+              <Social />
+              <div className="home__img">
+                <CircleType />
+              </div>
+              <Data handleNavLinkClick={handleNavLinkClick} />
+            </div>
+            <ScrollDown handleNavLinkClick={handleNavLinkClick} />
           </Home>
           <About aboutRef={aboutRef}>
             <Info projectData={projectData} />

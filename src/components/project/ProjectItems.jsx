@@ -1,20 +1,20 @@
 import React, { useState } from "react";
 import Close from "../../asset/close.svg";
-export default function ProjectItems({ img, name, details }) {
+import Link from "../../asset/link.svg";
+export default function ProjectItems({ img, name, link, details, motion }) {
   const [modal, setModal] = useState(false);
-
   const toggleModal = () => {
     setModal(!modal);
   };
 
   return (
     <div className="project__item">
-      <img src={img} alt="" className="project__img" />
-
-      <div className="project__hover" onClick={toggleModal}>
-        <h3 className="project__title">{name}</h3>
-      </div>
-
+      <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.8 }}>
+        <img src={img} alt="" className="project__img" />
+        <div className="project__hover" onClick={toggleModal}>
+          <h3 className="project__title">{name}</h3>
+        </div>
+      </motion.div>
       {modal && (
         <div className="project__modal">
           <div className="project__modal-content">
@@ -24,9 +24,8 @@ export default function ProjectItems({ img, name, details }) {
               className="modal__close"
               onClick={toggleModal}
             />
-
             <h3 className="modal__title">{name}</h3>
-
+            <img src={img} alt="" className="modal__img" />
             <ul className="modal__list grid">
               {details.map(({ icon, title, desc }, index) => {
                 return (
@@ -48,8 +47,13 @@ export default function ProjectItems({ img, name, details }) {
                 );
               })}
             </ul>
-
-            <img src={img} alt="" className="modal__img" />
+            <div className="modal__box-button">
+              <button className="modal__button-link">
+                <a href={link} target="_blank">
+                  Preview <i className="uil uil-link link-modal"></i>
+                </a>
+              </button>
+            </div>
           </div>
         </div>
       )}

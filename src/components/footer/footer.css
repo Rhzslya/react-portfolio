@@ -14,6 +14,7 @@
 
 .footer__link {
   text-transform: capitalize;
+  transition: 0.3s;
 }
 
 .footer__title {
@@ -22,7 +23,7 @@
 }
 
 .footer__link:hover {
-  color: var(--title-color-dark);
+  color: var(--hover-color);
 }
 
 .footer__list {
@@ -39,16 +40,16 @@
 }
 
 .footer__social-link {
-  background-color: var(--title-color);
-  color: var(--container-color);
+  color: var(--title-color);
   font-size: 1.125rem;
   padding: 0.4rem;
   border-radius: 0.5rem;
   display: inline-flex;
+  transition: 0.3s;
 }
 
 .footer__social-link:hover {
-  background-color: aqua;
+  background-color: var(--hover-color);
 }
 
 .footer__copyright {

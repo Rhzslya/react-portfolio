@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import UseTypeWritter from "./UseTypeWritter";
-
+import { motion } from "framer-motion";
+import TextSpan from "./TextSpan";
 export default function Data({ handleNavLinkClick }) {
   // Typing Text
 
@@ -12,9 +13,14 @@ export default function Data({ handleNavLinkClick }) {
 
   const text = UseTypeWritter(phrases, 100);
 
+  const name = "Rizqi Sabilla".split("");
   return (
     <div className="home__data">
-      <h1 className="home__title">Rizqi Sabilla</h1>
+      <h1 className="home__title">
+        {name.map((letter, i) => (
+          <TextSpan key={i}>{letter === " " ? "\u00A0" : letter}</TextSpan>
+        ))}
+      </h1>
 
       <h3 className="home__subtitle">{text}</h3>
 

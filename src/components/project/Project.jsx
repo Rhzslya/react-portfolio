@@ -9,7 +9,7 @@ import linkIcon from "../../asset/bx-link-external.svg";
 import langIcon from "../../asset/bx-code-alt.svg";
 import { projectData } from "./projectData";
 
-export default function Project({ projectRef }) {
+export default function Project({ projectRef, motion }) {
   const [currentPage, setCurrentPage] = useState(1);
   const [postPerPage, setPostPerPage] = useState(4);
 
@@ -45,7 +45,7 @@ export default function Project({ projectRef }) {
 
       <div className="project__container container grid">
         {currentProjects.map((item) => {
-          return <ProjectItems key={item.id} {...item} />;
+          return <ProjectItems key={item.id} {...item} motion={motion} />;
         })}
       </div>
       <Pagination

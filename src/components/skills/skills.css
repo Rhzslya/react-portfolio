@@ -70,6 +70,7 @@
 
 .scroll:hover ul {
   animation-play-state: paused;
+  cursor: default;
 }
 
 @keyframes animate {
@@ -83,7 +84,9 @@
 }
 .scroll ul {
   white-space: nowrap;
-  animation: animate 10s linear infinite;
+
+  display: flex;
+  animation: animate 20s linear infinite;
 }
 
 .scroll .skills-text {
@@ -104,11 +107,13 @@
 .imgbx img {
   max-width: 70px;
   scale: 0.8;
+  filter: grayscale(1);
+  transition: 0.3s;
 }
 
-.scroll ul {
-  display: flex;
-  animation: animate 10s linear infinite;
+.scroll ul img:hover {
+  filter: brightness(1);
+  scale: 1.03;
 }
 
 /* Breakspoints */

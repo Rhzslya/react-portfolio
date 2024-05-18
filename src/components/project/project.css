@@ -1,6 +1,6 @@
 .project__container {
   grid-template-columns: repeat(2, 1fr);
-  min-height: 524px;
+  min-height: 544px;
 }
 
 .project__modal {
@@ -14,21 +14,20 @@
 }
 
 .project__modal-content {
-  background-color: bisque;
+  background-color: rgb(250, 249, 249);
   max-width: 650px;
   width: 100%;
   padding: 32px;
-  border-radius: 10px;
   position: relative;
+  justify-content: center;
+  border-top: 5px solid blue;
 }
 
 .modal__close {
-  width: 50px;
+  width: 15px;
   position: absolute;
-  top: -3.5%;
-  right: -8.5%;
-  height: 50px;
-  filter: invert(0.8);
+  top: 2%;
+  right: 2%;
 }
 
 .modal__title {
@@ -41,8 +40,9 @@
 
 .modal__list {
   grid-template-columns: repeat(2, 1fr);
+
   row-gap: 10px;
-  margin-bottom: 24px;
+  margin: 24px 0;
 }
 
 .modal__item {
@@ -51,6 +51,10 @@
   column-gap: 8px;
 }
 
+.modal__item:nth-child(5) {
+  background-color: antiquewhite;
+  grid-area: 3 / 1 / 4 / 3;
+}
 .item__icon {
   display: flex;
 }
@@ -72,9 +76,10 @@
 }
 .project__item {
   position: relative;
-  border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
+  border: 5px solid rgb(228, 226, 223);
+  height: fit-content;
 }
 
 .project__img {
@@ -85,7 +90,7 @@
 }
 
 .project__hover {
-  background-color: bisque;
+  background-color: rgb(15, 15, 15);
   position: absolute;
   inset: 0;
   display: grid;
@@ -106,6 +111,7 @@
   margin-bottom: var(--mb-1-5);
   transform: translateY(20px);
   transition: all 0.5s ease;
+  color: #fff;
 }
 
 .project__item:hover .project__title {
@@ -116,6 +122,32 @@
   color: white;
 }
 
+.modal__box-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__button-link {
+  display: inline-block;
+  background-color: rgb(34, 32, 32);
+  color: var(--text-color);
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-weight: var(--font-medium);
+  transition: 0.3s;
+}
+
+.modal__button-link a {
+  display: inline-block;
+  color: #fff;
+}
+
+.modal__button-link:hover {
+  background-color: blue;
+}
+
+/* Pagination */
 .pagination {
   display: flex;
   justify-content: center;
@@ -165,7 +197,7 @@
   }
 
   .modal__close {
-    width: 40px;
+    width: 14px;
   }
 
   .modal__img {
@@ -179,7 +211,7 @@
   }
 
   .modal__close {
-    width: 25px;
+    width: 13px;
   }
 }
 
@@ -193,10 +225,6 @@
   }
   .modal__img {
     height: 250px;
-  }
-
-  .modal__close {
-    right: -12%;
   }
 }
 

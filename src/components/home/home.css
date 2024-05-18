@@ -55,7 +55,7 @@
 }
 
 .home__social-icon:hover {
-  color: #fff;
+  color: var(--hover-color);
   transition: all 0.5s;
 }
 
@@ -64,6 +64,9 @@
   margin-bottom: var(--mb-0-25);
 }
 
+.home__title span {
+  display: inline-block;
+}
 .home__subtitle {
   font-size: var(--h3-font-size);
   color: var(--text-color);
@@ -75,6 +78,7 @@
 
 .home__description {
   margin-bottom: var(--mb-2);
+  color: var(--text-color);
 }
 .home__scroll {
   display: flex;
@@ -89,7 +93,9 @@
 }
 
 .button {
-  background-color: antiquewhite;
+  background-color: #e0f1ff;
+  border: 1px solid black;
+  transition: 0.3s;
 }
 
 .button__icon {
@@ -135,6 +141,7 @@
   left: 50%;
   font-weight: bold;
   position: absolute;
+  color: var(--text-color);
 }
 
 @media screen and (max-width: 992px) {

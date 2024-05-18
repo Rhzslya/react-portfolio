@@ -12,6 +12,10 @@
   --text-color: #000000;
   --title-color:red
   --title-color-dark: #000000;
+  --backgroun-color:#292c2e ;
+  --hover-color:#1F93FA;
+  --error-color:#d83434;
+  --success-color:#73d844;
 
   
 
@@ -43,6 +47,7 @@
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
+  --z-pop-up:10000;
 }
 
 
@@ -50,9 +55,10 @@
   --body-color: #292d3a;
   --second-color: #292c2e;
   --text-color: #ffffff;
-  --title-color:red
+  --title-color: #fff;
   --title-color-dark: #000000;
-  
+  --hover-color:#000;
+ 
 }
 
 /* Responsive Typography */
@@ -163,8 +169,10 @@ img{
   font-weight: var(--font-medium);
 }
 
+
+
 .button:hover{
-  background-color: palegoldenrod;
+  background-color: #1F93FA;
 }
 
 .button__icon{
@@ -178,6 +186,8 @@ img{
   align-items: center;
   column-gap: 0.75rem;
 }
+
+
 
 /* Breakspoints */
 @media screen and (max-width: 992px) {

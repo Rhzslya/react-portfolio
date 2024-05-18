@@ -3,13 +3,14 @@ import fileIcon from "../../asset/bxs-file.svg";
 import userIcon from "../../asset/bx-user-circle.svg";
 import linkIcon from "../../asset/bx-link-external.svg";
 import langIcon from "../../asset/bx-code-alt.svg";
-
+import dateIcon from "../../asset/date.svg";
 export const projectData = [
   {
     id: 1,
     name: "Contact App Via CLI",
     img: Ryo,
     projectType: "Website",
+    link: "www.ryoaa.com",
     details: [
       {
         icon: fileIcon,
@@ -26,10 +27,11 @@ export const projectData = [
         title: "Language",
         desc: "HTML, CSS, Javascript",
       },
+
       {
-        icon: linkIcon,
-        title: "Preview",
-        desc: "www.ryo.com",
+        icon: dateIcon,
+        title: "Date Created",
+        desc: "12-03-2024",
       },
     ],
   },
@@ -38,6 +40,7 @@ export const projectData = [
     name: "Contact App Via CLI",
     img: Ryo,
     projectType: "Website",
+    link: "www.ryo.com",
     details: [
       {
         icon: fileIcon,
@@ -55,9 +58,9 @@ export const projectData = [
         desc: "HTML, CSS, Javascript",
       },
       {
-        icon: linkIcon,
-        title: "Preview",
-        desc: "www.ryo.com",
+        icon: dateIcon,
+        title: "Date Created",
+        desc: "12-03-2024",
       },
     ],
   },
@@ -66,6 +69,7 @@ export const projectData = [
     name: "Contact App Via CLI",
     img: Ryo,
     projectType: "Website",
+    link: "www.ryo.com",
     details: [
       {
         icon: fileIcon,
@@ -83,9 +87,9 @@ export const projectData = [
         desc: "HTML, CSS, Javascript",
       },
       {
-        icon: linkIcon,
-        title: "Preview",
-        desc: "https://rhzslya.github.io/rizqi-sabilla.github.io/",
+        icon: dateIcon,
+        title: "Date Created",
+        desc: "12-03-2024",
       },
     ],
   },
@@ -94,6 +98,7 @@ export const projectData = [
     name: "Contact App Via CLI",
     img: Ryo,
     projectType: "Website",
+    link: "www.ryo.com",
     details: [
       {
         icon: fileIcon,
@@ -111,9 +116,9 @@ export const projectData = [
         desc: "HTML, CSS, Javascript",
       },
       {
-        icon: linkIcon,
-        title: "Preview",
-        desc: "https://rhzslya.github.io/rizqi-sabilla.github.io/",
+        icon: dateIcon,
+        title: "Date Created",
+        desc: "12-03-2024",
       },
     ],
   },
@@ -122,6 +127,7 @@ export const projectData = [
     name: "Contact App Via CLI",
     img: Ryo,
     projectType: "Website",
+    link: "www.ryo.com",
     details: [
       {
         icon: fileIcon,
@@ -139,9 +145,9 @@ export const projectData = [
         desc: "HTML, CSS, Javascript",
       },
       {
-        icon: linkIcon,
-        title: "Preview",
-        desc: "https://rhzslya.github.io/rizqi-sabilla.github.io/",
+        icon: dateIcon,
+        title: "Date Created",
+        desc: "12-03-2024",
       },
     ],
   },

@@ -26,7 +26,7 @@ export default function SkillsCarousel() {
       </div>
 
       <div className="scroll imgbx container">
-        <ul>
+        <ul className="ul__hover">
           {logoSkills.map((item, i) => (
             <li key={i} className="content__skills-img">
               <a href="" className="skills-img">

@@ -26,6 +26,8 @@ import UserInfo from "./components/userinfo/UserInfo";
 import ScrollDown from "./components/home/ScrollDown";
 import CircleType from "./components/home/CircleType";
 
+// Library
+import { motion } from "framer-motion";
 export default function App() {
   const [display, setDisplay] = useState("set-display");
   const [height, setHeight] = useState("");
@@ -108,7 +110,7 @@ export default function App() {
           </About>
           <Skills skillsRef={skillsRef} />
           <Qualification />
-          <Project projectRef={projectRef} />
+          <Project projectRef={projectRef} motion={motion} />
           <Contact contactRef={contactRef} />
           <Footer handleNavLinkClick={handleNavLinkClick} />
           <ScrollUp handleNavLinkClick={handleNavLinkClick} />

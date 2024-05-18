@@ -1,11 +1,18 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import Close from "../../asset/close.svg";
 import "./contact.css";
 import Validation from "./Validation";
+
 export default function Contact({ contactRef }) {
   const form = useRef();
-  const [isSubmitted, setIsSubmitted] = useState(false);
   const [errors, setErrors] = useState({});
+  const [showPopUp, setShowPopUp] = useState({
+    show: false,
+    message: "",
+    isError: false,
+  });
+  const timeOutRef = useRef(null);
 
   // Validation Form
   const [values, setValues] = useState({
@@ -13,6 +20,14 @@ export default function Contact({ contactRef }) {
     email: "",
     project: "",
   });
+
+  const handleClick = () => {
+    setShowPopUp({ show: false, message: "", isError: false });
+    if (timeOutRef.current) {
+      clearTimeout(timeOutRef.current);
+      timeOutRef.current = null;
+    }
+  };
 
   function handleInput(event) {
     const updatedErrors = { ...errors };
@@ -35,9 +50,19 @@ export default function Contact({ contactRef }) {
         })
         .then(() => {
           form.current.reset();
-          setIsSubmitted(true);
-          setTimeout(() => {
-            setIsSubmitted(false);
+          setShowPopUp({ show: true, message: "Success", isError: false });
+
+          if (timeOutRef.current) {
+            clearTimeout(timeOutRef.current);
+          }
+
+          timeOutRef.current = setTimeout(() => {
+            setShowPopUp({
+              show: false,
+              message: "",
+              isError: false,
+            });
+            timeOutRef.current = null;
           }, 2000);
           setErrors({});
           setValues({
@@ -50,7 +75,24 @@ export default function Contact({ contactRef }) {
           console.error("Error Sending Email");
         });
     } else {
-      setIsSubmitted(false);
+      setShowPopUp({
+        show: true,
+        message: "Please correct the errors",
+        isError: true,
+      });
+
+      if (timeOutRef.current) {
+        clearTimeout(timeOutRef.current);
+      }
+
+      timeOutRef.current = setTimeout(() => {
+        setShowPopUp({
+          show: false,
+          message: "",
+          isError: false,
+        });
+        timeOutRef.current = null;
+      }, 2000);
     }
   }
 
@@ -66,42 +108,36 @@ export default function Contact({ contactRef }) {
           <div className="contact__info">
             <div className="contact__card">
               <i className="bx bx-mail-send contact__card-icon"></i>
-
               <h3 className="contact__card-title">Email</h3>
               <span className="contact__card-data">user@gmail.com</span>
-
               <a
                 href="mailto:examplemail@gmail.com.com"
                 className="contact__button"
               >
-                Write Me{" "}
+                Write Me
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
 
             <div className="contact__card">
               <i className="bx bxl-whatsapp contact__card-icon"></i>
-
               <h3 className="contact__card-title">Whatsapp</h3>
               <span className="contact__card-data">08123456789</span>
-
               <a
                 href="https://api.whatsapp.com/send?phone=62214480457=Hello, more information"
                 className="contact__button"
               >
-                Write Me{" "}
+                Write Me
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
 
             <div className="contact__card">
               <i className="bx bxl-messenger contact__card-icon"></i>
-
               <h3 className="contact__card-title">Messenger</h3>
               <span className="contact__card-data">user.fb123</span>
-
               <a href="https://m.me/seira" className="contact__button">
-                Write Me{" "}
+                Write Me
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
@@ -127,6 +163,7 @@ export default function Contact({ contactRef }) {
                 className="contact__form-input"
                 placeholder="Insert Your Name"
                 onChange={handleInput}
+                autoComplete="off"
               />
               {errors.name && (
                 <small className="error__text">{errors.name}</small>
@@ -143,6 +180,7 @@ export default function Contact({ contactRef }) {
                 className="contact__form-input"
                 placeholder="Insert Your Email"
                 onChange={handleInput}
+                autoComplete="off"
               />
               {errors.email && (
                 <small className="error__text">{errors.email}</small>
@@ -179,19 +217,31 @@ export default function Contact({ contactRef }) {
                   <path
                     id="XMLID_53_"
                     d="M164.711,456.687c0,2.966,1.647,5.686,4.266,7.072c2.617,1.385,5.799,1.207,8.245-0.468l55.09-37.616
-		l-67.6-32.22V456.687z"
+                    l-67.6-32.22V456.687z"
                   />
                   <path
                     id="XMLID_52_"
                     d="M492.431,32.443c-1.513-1.395-3.466-2.125-5.44-2.125c-1.19,0-2.377,0.264-3.5,0.816L7.905,264.422
-		c-4.861,2.389-7.937,7.353-7.904,12.783c0.033,5.423,3.161,10.353,8.057,12.689l125.342,59.724l250.62-205.99L164.455,364.414
-		l156.145,74.4c1.918,0.919,4.012,1.376,6.084,1.376c1.768,0,3.519-0.322,5.186-0.977c3.637-1.438,6.527-4.318,7.97-7.956
-		L494.436,41.257C495.66,38.188,494.862,34.679,492.431,32.443z"
+                    c-4.861,2.389-7.937,7.353-7.904,12.783c0.033,5.423,3.161,10.353,8.057,12.689l125.342,59.724l250.62-205.99L164.455,364.414
+                    l156.145,74.4c1.918,0.919,4.012,1.376,6.084,1.376c1.768,0,3.519-0.322,5.186-0.977c3.637-1.438,6.527-4.318,7.97-7.956
+                    L494.436,41.257C495.66,38.188,494.862,34.679,492.431,32.443z"
                   />
                 </g>
               </svg>
             </button>
-            {isSubmitted && <small className="success__text">Succes</small>}
+            {showPopUp.show && (
+              <div className="box__pop-up">
+                <div className={`pop-up ${showPopUp.isError ? "error" : ""}`}>
+                  <span>{showPopUp.message}</span>
+                  <img
+                    src={Close}
+                    alt=""
+                    className="close__pop-up"
+                    onClick={handleClick}
+                  />
+                </div>
+              </div>
+            )}
           </form>
         </div>
       </div>

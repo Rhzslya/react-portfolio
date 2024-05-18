@@ -20,7 +20,7 @@
   padding: 32px;
   position: relative;
   justify-content: center;
-  border-top: 5px solid blue;
+  border-top: 5px solid var(--hover-color);
 }
 
 .modal__close {
@@ -78,7 +78,10 @@
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  border: 5px solid rgb(228, 226, 223);
+  border-width: 5px;
+  border-style: solid;
+  border-image: var(--background-img);
+  border-image-slice: 1;
   height: fit-content;
 }
 
@@ -141,10 +144,15 @@
 .modal__button-link a {
   display: inline-block;
   color: #fff;
+  transition: 0.3s;
 }
 
 .modal__button-link:hover {
-  background-color: blue;
+  background-color: var(--hover-color);
+}
+
+.modal__button-link:hover a {
+  color: #000;
 }
 
 /* Pagination */
@@ -157,7 +165,7 @@
 }
 
 .page__number {
-  background-color: bisque;
+  background-color: var(--background-color);
   color: rgb(0, 0, 7);
   border: none;
   padding: 8px 12px;
@@ -167,14 +175,15 @@
   outline: none;
   transition: background-color 0.3s ease;
   font-weight: 600;
+  border: 1px solid rgb(0, 0, 0);
 }
 
 .page__number:hover {
-  background-color: rgb(250, 237, 222);
+  background-color: var(--hover-color);
 }
 
 .active {
-  background-color: rgb(250, 237, 222);
+  background-color: var(--hover-color);
 }
 /* Breakspoints */
 @media screen and (max-width: 992px) {

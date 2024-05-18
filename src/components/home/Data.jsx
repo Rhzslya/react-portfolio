@@ -31,7 +31,7 @@ export default function Data({ handleNavLinkClick }) {
 
       <a
         href="#contact"
-        className="button button--flex"
+        className="button button--flex button-contact"
         onClick={(e) => {
           e.preventDefault();
           handleNavLinkClick("#contact");
@@ -39,7 +39,6 @@ export default function Data({ handleNavLinkClick }) {
       >
         Lets Talk
         <svg
-          fill="#000000"
           height="30px"
           width="30px"
           version="1.1"

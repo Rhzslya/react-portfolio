@@ -7,17 +7,18 @@
   --font-semi: 600;
 
   /* Colors */
-  --body-color: #c5cbda;
-  --second-color: #292c2e;
+  --body-color: #F6F9FF;
   --text-color: #000000;
   --title-color:red
   --title-color-dark: #000000;
-  --backgroun-color:#292c2e ;
-  --hover-color:#1F93FA;
+  --background-color:#C5CBDA;
+  --background-img:linear-gradient(to left top, #73fac9, #66f1c8, #5ae8c6, #4edec5, #44d5c2);
+  --hover-background-img:linear-gradient(to right top, #00c3dc, #00bcdf, #00b5e1, #00ade2, #00a5e2);
+  --hover-color:#73FAC9;
   --error-color:#d83434;
   --success-color:#73d844;
-
-  
+  --border-color:#000;
+  --hover-text-color:#fff;
 
   /* Font and typography */
   --body-font: "Noto Sans", sans-serif;
@@ -28,6 +29,7 @@
   --normal-font-size: 0.938rem;
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
+
 
   /* Font Weight */
   --font-medium: 500;
@@ -52,13 +54,16 @@
 
 
 [data-theme="dark"] {
-  --body-color: #292d3a;
+  --body-color: #0b0e0f;
   --second-color: #292c2e;
   --text-color: #ffffff;
   --title-color: #fff;
   --title-color-dark: #000000;
-  --hover-color:#000;
- 
+  --hover-color:#A9FFFF;
+  --background-color:#8B8D93;
+  --border-color:#fff;
+  --hover-text-color:#000;
+  --background-img: linear-gradient(to left bottom, #a9ffff, #a3fffa, #9efff5, #9affee, #97ffe7);
 }
 
 /* Responsive Typography */
@@ -162,18 +167,22 @@ img{
 /* Buttons */
 .button{
   display: inline-block;
-  background-color: var(--title-color);
+  background-color: var(--background-color);
   color: var(--text-color);
   padding: 1rem;
   border-radius: 0.5rem;
   font-weight: var(--font-medium);
+  border: 2px solid var(--hover-color);
+  transition: 0.3s;
 }
-
-
 
 .button:hover{
-  background-color: #1F93FA;
+background-color: var(--hover-color);
+color: var(--hover-text-color);
+border: 2px solid var(--border-color);
 }
+
+
 
 .button__icon{
   font-size: 1.25rem;

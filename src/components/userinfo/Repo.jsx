@@ -34,6 +34,7 @@ export default function LatestCommit() {
           height="20px"
           viewBox="0 0 512 512"
           xmlns="http://www.w3.org/2000/svg"
+          className="repo__link-icon"
         >
           <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
           <g

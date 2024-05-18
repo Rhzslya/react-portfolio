@@ -18,7 +18,7 @@
 }
 
 .contact__card {
-  background-color: bisque;
+  background-color: var(--background-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 1rem;
   border-radius: 0.75rem;
@@ -43,6 +43,7 @@
 .contact__card-data {
   display: block;
   margin-bottom: var(--mb-0-75);
+  color: var(--text-color);
 }
 
 .contact__button {
@@ -61,6 +62,7 @@
 
 .contact__button:hover .contact__button-icon {
   transform: translate(0.25rem);
+  color: var(--hover-text-color);
 }
 .contact__form {
   width: 360px;
@@ -88,7 +90,7 @@
 }
 
 .contact__form-input:focus {
-  border: 2px solid var(--success-color);
+  border: 2px solid var(--hover-color);
 }
 
 .contact__form-tag {
@@ -99,6 +101,7 @@
   padding: 0.25rem;
   background-color: var(--body-color);
   z-index: 10;
+  color: var(--text-color);
 }
 
 .contact__form-area {
@@ -147,6 +150,10 @@
   right: 2.2%;
   top: 5px;
   cursor: pointer;
+}
+
+.button-send:hover .button__icon {
+  fill: var(--hover-text-color);
 }
 /* Breakpoints */
 @media screen and (max-width: 992px) {

@@ -33,11 +33,16 @@
 }
 
 .commit__code a:hover {
-  color: red; /* Ganti warna teks saat hover */
+  color: var(--hover-color); /* Ganti warna teks saat hover */
 }
 
 .hide-user-info {
   bottom: -30%;
+}
+
+.local__time-icon,
+.repo__link-icon {
+  fill: var(--text-color);
 }
 
 /* Breakspoints */

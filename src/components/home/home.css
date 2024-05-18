@@ -92,12 +92,6 @@
   animation: button-animate 2s ease-in-out infinite;
 }
 
-.button {
-  background-color: #e0f1ff;
-  border: 1px solid black;
-  transition: 0.3s;
-}
-
 .button__icon {
   width: 22px;
   height: 22px;
@@ -144,6 +138,14 @@
   color: var(--text-color);
 }
 
+.button__icon,
+.scroll__down-icon {
+  fill: var(--text-color);
+}
+
+.button-contact:hover .button__icon {
+  fill: var(--hover-text-color);
+}
 @media screen and (max-width: 992px) {
   .home__content {
     grid-template-columns: 100px repeat(2, 1fr);

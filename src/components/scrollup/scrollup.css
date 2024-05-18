@@ -2,7 +2,7 @@
   position: fixed;
   right: 2.5rem;
   bottom: -20%;
-  background-color: rgb(207, 70, 70);
+  background-color: var(--background-color);
   opacity: 0.8;
   padding: 0.3rem 0.5rem;
   border-radius: 0.4rem;
@@ -12,11 +12,16 @@
 
 .scrollup__icon {
   font-size: 1.5rem;
-  color: aliceblue;
+  color: #fff;
+  transition: 0.4s;
 }
 
 .scrollup:hover {
-  background-color: bisque;
+  background-color: var(--hover-color);
+}
+
+.scrollup:hover .scrollup__icon {
+  color: #000;
 }
 
 /* Show Scroll */

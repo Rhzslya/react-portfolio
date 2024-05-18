@@ -58,10 +58,12 @@
   display: inline-block;
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-1);
+  color: var(--text-color);
 }
 
-.qualification__calendar {
+.qualification__calender {
   font-size: var(--small-font-size);
+  color: var(--text-color);
 }
 
 .qualification__rounder {

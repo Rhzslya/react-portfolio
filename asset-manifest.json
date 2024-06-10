@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/Rhzslya/rizqisabila/static/css/main.6c9b7342.css",
+    "main.js": "/Rhzslya/rizqisabila/static/js/main.97ee7a94.js",
+    "static/js/453.dda0c704.chunk.js": "/Rhzslya/rizqisabila/static/js/453.dda0c704.chunk.js",
+    "static/media/portfolioweb-1.png": "/Rhzslya/rizqisabila/static/media/portfolioweb-1.f6cca57cd7544ac12b0f.png",
+    "static/media/Rizqi-Sabilla-CV.pdf": "/Rhzslya/rizqisabila/static/media/Rizqi-Sabilla-CV.c52c1f1aeb6a88b30ca9.pdf",
+    "static/media/portfolioweb-2.png": "/Rhzslya/rizqisabila/static/media/portfolioweb-2.556732e34d6c3e0503e2.png",
+    "static/media/about.png": "/Rhzslya/rizqisabila/static/media/about.f63e9a2230ab3dcf2eaa.png",
+    "static/media/Ryo-Profile.png": "/Rhzslya/rizqisabila/static/media/Ryo-Profile.eec7eece986f1998a114.png",
+    "static/media/mongodb-icon-2.svg": "/Rhzslya/rizqisabila/static/media/mongodb-icon-2.60d7804b193743e04ba1b72124e7486d.svg",
+    "static/media/bootstrap-5.svg": "/Rhzslya/rizqisabila/static/media/bootstrap-5.a7f31ad7fe38d690a8f31171722b5279.svg",
+    "static/media/tailwind-css-wordmark.svg": "/Rhzslya/rizqisabila/static/media/tailwind-css-wordmark.afd53df95b8f0fb93228256ea30d2a09.svg",
+    "static/media/nextjs.svg": "/Rhzslya/rizqisabila/static/media/nextjs.e3c042b9d9d809ebb67e9bc6e1e5f70d.svg",
+    "static/media/react-2.svg": "/Rhzslya/rizqisabila/static/media/react-2.d2870ded3f8e257d490f8b87f3ca0be5.svg",
+    "static/media/nodejs-icon.svg": "/Rhzslya/rizqisabila/static/media/nodejs-icon.5e7aedf5426a154cd246051e94fc1f4c.svg",
+    "static/media/Sun.svg": "/Rhzslya/rizqisabila/static/media/Sun.681607dcda2a01539a9a8a157ae74e6e.svg",
+    "static/media/link.svg": "/Rhzslya/rizqisabila/static/media/link.83abb384ad7612224fc1f49b8ad32289.svg",
+    "static/media/firebase-svgrepo-com.svg": "/Rhzslya/rizqisabila/static/media/firebase-svgrepo-com.8f69a13150a1594d8fb73df74f12b548.svg",
+    "static/media/Moon.svg": "/Rhzslya/rizqisabila/static/media/Moon.0a6a2b75ac51157455302ddcfca385c0.svg",
+    "static/media/git-icon.svg": "/Rhzslya/rizqisabila/static/media/git-icon.6e545b3c774786467110bb86ef4ff70f.svg",
+    "index.html": "/Rhzslya/rizqisabila/index.html",
+    "static/media/date.svg": "/Rhzslya/rizqisabila/static/media/date.eafb3057bc29158ed7ec3cd507403c27.svg",
+    "static/media/bx-user-circle.svg": "/Rhzslya/rizqisabila/static/media/bx-user-circle.828cd30161d8930211b8733e6580cbfc.svg",
+    "static/media/close.svg": "/Rhzslya/rizqisabila/static/media/close.e924cc380a22a4be0561c8388146ff96.svg",
+    "static/media/css-3.svg": "/Rhzslya/rizqisabila/static/media/css-3.192cfd241456d248a519441884ccb36d.svg",
+    "static/media/html-1.svg": "/Rhzslya/rizqisabila/static/media/html-1.1e51cffe60d99b041e530b60b591c456.svg",
+    "static/media/javascript-1.svg": "/Rhzslya/rizqisabila/static/media/javascript-1.f70823f0303de2b162b25a5eab15f202.svg",
+    "static/media/bx-code-alt.svg": "/Rhzslya/rizqisabila/static/media/bx-code-alt.0773ddc4e2a966e1c2b6074619aded40.svg",
+    "static/media/bx-link-external.svg": "/Rhzslya/rizqisabila/static/media/bx-link-external.5c88b023ad88d36f7c16482c66151c13.svg",
+    "static/media/bxs-file.svg": "/Rhzslya/rizqisabila/static/media/bxs-file.711bb3253c6513cc02ee6540d96d25d1.svg",
+    "main.6c9b7342.css.map": "/Rhzslya/rizqisabila/static/css/main.6c9b7342.css.map",
+    "main.97ee7a94.js.map": "/Rhzslya/rizqisabila/static/js/main.97ee7a94.js.map",
+    "453.dda0c704.chunk.js.map": "/Rhzslya/rizqisabila/static/js/453.dda0c704.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6c9b7342.css",
+    "static/js/main.97ee7a94.js"
+  ]
+}

@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/rizqisabila/static/css/main.03012ee0.css",
-    "main.js": "/rizqisabila/static/js/main.8c67e87d.js",
+    "main.css": "/rizqisabila/static/css/main.d9daedd4.css",
+    "main.js": "/rizqisabila/static/js/main.39f8d21a.js",
     "static/js/453.dda0c704.chunk.js": "/rizqisabila/static/js/453.dda0c704.chunk.js",
     "static/media/portfolioweb-1.png": "/rizqisabila/static/media/portfolioweb-1.f6cca57cd7544ac12b0f.png",
     "static/media/Rizqi-Sabilla-CV.pdf": "/rizqisabila/static/media/Rizqi-Sabilla-CV.c52c1f1aeb6a88b30ca9.pdf",
+    "static/media/logo-navbar.png": "/rizqisabila/static/media/logo-navbar.b98170525c211a1ff07a.png",
     "static/media/portfolioweb-2.png": "/rizqisabila/static/media/portfolioweb-2.556732e34d6c3e0503e2.png",
     "static/media/about.png": "/rizqisabila/static/media/about.f63e9a2230ab3dcf2eaa.png",
     "static/media/Ryo-Profile.png": "/rizqisabila/static/media/Ryo-Profile.eec7eece986f1998a114.png",
@@ -29,12 +30,12 @@
     "static/media/bx-code-alt.svg": "/rizqisabila/static/media/bx-code-alt.0773ddc4e2a966e1c2b6074619aded40.svg",
     "static/media/bx-link-external.svg": "/rizqisabila/static/media/bx-link-external.5c88b023ad88d36f7c16482c66151c13.svg",
     "static/media/bxs-file.svg": "/rizqisabila/static/media/bxs-file.711bb3253c6513cc02ee6540d96d25d1.svg",
-    "main.03012ee0.css.map": "/rizqisabila/static/css/main.03012ee0.css.map",
-    "main.8c67e87d.js.map": "/rizqisabila/static/js/main.8c67e87d.js.map",
+    "main.d9daedd4.css.map": "/rizqisabila/static/css/main.d9daedd4.css.map",
+    "main.39f8d21a.js.map": "/rizqisabila/static/js/main.39f8d21a.js.map",
     "453.dda0c704.chunk.js.map": "/rizqisabila/static/js/453.dda0c704.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.03012ee0.css",
-    "static/js/main.8c67e87d.js"
+    "static/css/main.d9daedd4.css",
+    "static/js/main.39f8d21a.js"
   ]
 }

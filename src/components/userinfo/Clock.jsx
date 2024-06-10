@@ -13,15 +13,21 @@ export default function ClockAndLocation() {
     return () => clearInterval(intervalId);
   }, []);
 
-  //   Get Location
+  // Get Location
   const [ipAddress, setIpAddress] = useState("");
   const [geoInfo, setGeoInfo] = useState({});
 
+  const isLocalhost = window.location.hostname === "localhost";
+
   useEffect(() => {
     const getVisitorIP = async () => {
-      const response = await fetch("https://api.ipify.org");
-      const data = await response.text();
-      setIpAddress(data);
+      try {
+        const response = await fetch("https://api.ipify.org?format=json");
+        const data = await response.json();
+        setIpAddress(data.ip);
+      } catch (err) {
+        console.error("Failed to fetch IP address: ", err);
+      }
     };
 
     getVisitorIP();
@@ -31,9 +37,16 @@ export default function ClockAndLocation() {
     if (ipAddress) {
       const fetchIPInfo = async () => {
         try {
-          const response = await fetch(`http://ip-api.com/json/${ipAddress}`);
+          const protocol = isLocalhost ? "http" : "https";
+          const response = await fetch(
+            `${protocol}://ip-api.com/json/${ipAddress}`
+          );
           const data = await response.json();
-          setGeoInfo(data);
+          if (data.status === "success") {
+            setGeoInfo(data);
+          } else {
+            console.error("Failed to fetch location info: ", data.message);
+          }
         } catch (err) {
           console.error("Failed to fetch location info: ", err);
         }
@@ -41,7 +54,7 @@ export default function ClockAndLocation() {
 
       fetchIPInfo();
     }
-  }, [ipAddress]);
+  }, [ipAddress, isLocalhost]);
 
   return (
     <div className="local__time">

@@ -7,6 +7,8 @@ import tailwind from "./tailwind-css-wordmark.svg";
 import reactLogo from "./react-2.svg";
 import nodejs from "./nodejs-icon.svg";
 import mongodb from "./mongodb-icon-2.svg";
+import nextjs from "./nextjs.svg";
+import firebase from "./firebase-svgrepo-com.svg";
 
 export const logoSkills = [
   html,
@@ -18,6 +20,8 @@ export const logoSkills = [
   reactLogo,
   nodejs,
   mongodb,
+  nextjs,
+  firebase,
 ];
 
 export const textSkills = [
@@ -30,4 +34,5 @@ export const textSkills = [
   "React",
   "Node JS",
   "Mongo DB",
+  "Next.JS",
 ];

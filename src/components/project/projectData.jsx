@@ -1,4 +1,6 @@
 import Ryo from "../../asset/Ryo-Profile.png";
+import PortfolioWeb1 from "../../asset/portfolioweb-1.png";
+import PortfolioWeb2 from "../../asset/portfolioweb-2.png";
 import fileIcon from "../../asset/bxs-file.svg";
 import userIcon from "../../asset/bx-user-circle.svg";
 import linkIcon from "../../asset/bx-link-external.svg";
@@ -7,10 +9,10 @@ import dateIcon from "../../asset/date.svg";
 export const projectData = [
   {
     id: 1,
-    name: "Contact App Via CLI",
-    img: Ryo,
+    name: "Web Portfolio With Vanilla JS",
+    img: PortfolioWeb1,
     projectType: "Website",
-    link: "www.ryoaa.com",
+    link: "https://rhzslya.github.io/rizqi-sabilla.github.io/",
     details: [
       {
         icon: fileIcon,
@@ -37,10 +39,10 @@ export const projectData = [
   },
   {
     id: 2,
-    name: "Contact App Via CLI",
-    img: Ryo,
+    name: "Web Portfolio With React",
+    img: PortfolioWeb2,
     projectType: "Website",
-    link: "www.ryo.com",
+    link: "",
     details: [
       {
         icon: fileIcon,
@@ -55,7 +57,7 @@ export const projectData = [
       {
         icon: langIcon,
         title: "Language",
-        desc: "HTML, CSS, Javascript",
+        desc: "HTML, CSS, React",
       },
       {
         icon: dateIcon,

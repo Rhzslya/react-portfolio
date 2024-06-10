@@ -41,14 +41,26 @@ export default function Footer({ handleNavLinkClick }) {
         </ul>
 
         <div className="footer__social">
-          <a href="" className="footer__social-link" target="_blank">
+          <a
+            href="https://www.facebook.com/profile.php?id=100077692014108"
+            className="footer__social-link"
+            target="_blank"
+          >
             <i className="bx bxl-facebook"></i>
           </a>
 
-          <a href="" className="footer__social-link" target="_blank">
+          <a
+            href="https://www.instagram.com/rhzslya/"
+            className="footer__social-link"
+            target="_blank"
+          >
             <i className="bx bxl-instagram"></i>
           </a>
-          <a href="" className="footer__social-link" target="_blank">
+          <a
+            href="https://discordapp.com/users/918163786341445693"
+            className="footer__social-link"
+            target="_blank"
+          >
             <i className="bx bxl-discord"></i>
           </a>
         </div>

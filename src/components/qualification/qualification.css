@@ -14,10 +14,11 @@
   color: var(--title-color);
   margin: 0 var(--mb-1);
   cursor: pointer;
+  transition: all 0.5s;
 }
 
 .qualification__button:hover {
-  color: aqua;
+  color: var(--hover-color);
 }
 
 .qualification__icon {

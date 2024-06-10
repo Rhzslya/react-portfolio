@@ -109,7 +109,6 @@ export default function App() {
             <ButtonCV />
           </About>
           <Skills skillsRef={skillsRef} />
-          <Qualification />
           <Project projectRef={projectRef} motion={motion} />
           <Contact contactRef={contactRef} />
           <Footer handleNavLinkClick={handleNavLinkClick} />

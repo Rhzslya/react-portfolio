@@ -105,7 +105,6 @@
 .scroll .skills-text:hover {
   background-color: var(--hover-color);
   color: #000;
-  cursor: pointer;
 }
 
 .imgbx img {

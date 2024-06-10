@@ -7,9 +7,9 @@ export default function SkillsCarousel() {
         <ul>
           {textSkills.map((item, i) => (
             <li key={i} className="content__skills-text">
-              <a href="" className="skills-text">
+              <p href="" className="skills-text">
                 {item}
-              </a>
+              </p>
             </li>
           ))}
         </ul>
@@ -17,9 +17,9 @@ export default function SkillsCarousel() {
         <ul>
           {textSkills.map((item, i) => (
             <li key={i} className="content__skills-text">
-              <a href="" className="skills-text">
+              <p href="" className="skills-text">
                 {item}
-              </a>
+              </p>
             </li>
           ))}
         </ul>
@@ -29,9 +29,9 @@ export default function SkillsCarousel() {
         <ul className="ul__hover">
           {logoSkills.map((item, i) => (
             <li key={i} className="content__skills-img">
-              <a href="" className="skills-img">
+              <div href="" className="skills-img">
                 <img src={item} alt={item} />
-              </a>
+              </div>
             </li>
           ))}
         </ul>
@@ -39,9 +39,9 @@ export default function SkillsCarousel() {
         <ul>
           {logoSkills.map((item, i) => (
             <li key={i}>
-              <a href="">
+              <div href="">
                 <img src={item} alt="" />
-              </a>
+              </div>
             </li>
           ))}
         </ul>

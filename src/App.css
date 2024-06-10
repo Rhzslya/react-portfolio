@@ -7,18 +7,31 @@
   --font-semi: 600;
 
   /* Colors */
-  --body-color: #F6F9FF;
+  --body-color: #f6f9ff;
   --text-color: #000000;
-  --title-color:red
   --title-color-dark: #000000;
-  --background-color:#C5CBDA;
-  --background-img:linear-gradient(to left top, #73fac9, #66f1c8, #5ae8c6, #4edec5, #44d5c2);
-  --hover-background-img:linear-gradient(to right top, #00c3dc, #00bcdf, #00b5e1, #00ade2, #00a5e2);
-  --hover-color:#73FAC9;
-  --error-color:#d83434;
-  --success-color:#73d844;
-  --border-color:#000;
-  --hover-text-color:#fff;
+  --background-color: #c5cbda;
+  --background-img: linear-gradient(
+    to left top,
+    #73fac9,
+    #66f1c8,
+    #5ae8c6,
+    #4edec5,
+    #44d5c2
+  );
+  --hover-background-img: linear-gradient(
+    to right top,
+    #00c3dc,
+    #00bcdf,
+    #00b5e1,
+    #00ade2,
+    #00a5e2
+  );
+  --hover-color: #73fac9;
+  --error-color: #d83434;
+  --success-color: #73d844;
+  --border-color: #000;
+  --hover-text-color: #fff;
 
   /* Font and typography */
   --body-font: "Noto Sans", sans-serif;
@@ -29,7 +42,6 @@
   --normal-font-size: 0.938rem;
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
-
 
   /* Font Weight */
   --font-medium: 500;
@@ -49,9 +61,8 @@
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
-  --z-pop-up:10000;
+  --z-pop-up: 10000;
 }
-
 
 [data-theme="dark"] {
   --body-color: #0b0e0f;
@@ -59,11 +70,18 @@
   --text-color: #ffffff;
   --title-color: #fff;
   --title-color-dark: #000000;
-  --hover-color:#A9FFFF;
-  --background-color:#8B8D93;
-  --border-color:#fff;
-  --hover-text-color:#000;
-  --background-img: linear-gradient(to left bottom, #a9ffff, #a3fffa, #9efff5, #9affee, #97ffe7);
+  --hover-color: #a9ffff;
+  --background-color: #8b8d93;
+  --border-color: #fff;
+  --hover-text-color: #000;
+  --background-img: linear-gradient(
+    to left bottom,
+    #a9ffff,
+    #a3fffa,
+    #9efff5,
+    #9affee,
+    #97ffe7
+  );
 }
 
 /* Responsive Typography */
@@ -100,9 +118,8 @@ textarea {
 
 body {
   background-color: var(--body-color);
-  transition: .3s;
+  transition: 0.3s;
 }
-
 
 h1,
 h2,
@@ -111,61 +128,60 @@ h3 {
   font-weight: var(--font-semi-bold);
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-button{
+button {
   cursor: pointer;
   border: none;
   outline: none;
 }
 
-img{
+img {
   max-width: 100%;
   height: auto;
 }
 
-
 /* Reusable CSS */
-.section{
+.section {
   padding: 6rem 0 2rem;
 }
 
-.section__title{
+.section__title {
   font-size: var(--h1-font-size);
   color: var(--title-color);
 }
 
-.section__subtitle{
+.section__subtitle {
   display: block;
   font-size: var(--small-font-size);
   margin-bottom: 4rem;
 }
 
 .section__title,
-.section__subtitle{
+.section__subtitle {
   text-align: center;
 }
 
 /* Layout */
-.container{
+.container {
   max-width: 968px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.grid{
+.grid {
   display: grid;
   gap: 1.5rem;
 }
 
 /* Buttons */
-.button{
+.button {
   display: inline-block;
   background-color: var(--background-color);
   color: var(--text-color);
@@ -176,38 +192,34 @@ img{
   transition: 0.3s;
 }
 
-.button:hover{
-background-color: var(--hover-color);
-color: var(--hover-text-color);
-border: 2px solid var(--border-color);
+.button:hover {
+  background-color: var(--hover-color);
+  color: var(--hover-text-color);
+  border: 2px solid var(--border-color);
 }
 
-
-
-.button__icon{
+.button__icon {
   font-size: 1.25rem;
   margin-left: var(--mb-0-5);
   transition: 0.3s;
 }
 
-.button--flex{
+.button--flex {
   display: inline-flex;
   align-items: center;
   column-gap: 0.75rem;
 }
 
-
-
 /* Breakspoints */
 @media screen and (max-width: 992px) {
-  .container{
+  .container {
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
   }
-  .button{
+  .button {
     padding: 0.75rem 1rem;
   }
-  .button__icon{
+  .button__icon {
     font-size: 1rem;
     margin: 0;
   }
@@ -217,18 +229,16 @@ border: 2px solid var(--border-color);
   .section {
     padding: 2rem 0 4rem;
   }
-
 }
 
 @media screen and (max-width: 576px) {
-
 }
 
 @media screen and (max-width: 350px) {
-  :root{
-    --big-font-size:2.25rem
+  :root {
+    --big-font-size: 2.25rem;
   }
-  .container{
+  .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
   }

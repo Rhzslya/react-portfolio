@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./header.css";
-import { useNavigate } from "react-router-dom";
 import { sectionsId } from "./sectionsId";
 import { iconsNav } from "./iconsNav";
-import DarkMode from "../dark-mode/DarkMode";
 export default function Header({
   scrollHeader,
   handleNavLinkClick,
@@ -54,7 +52,7 @@ export default function Header({
     <header className={"header" + (scrollHeader ? " scroll-header" : "")}>
       <nav className="nav container">
         <a href="" className="nav__logo">
-          Seira
+          <img src="logo-light-mode.png" alt="" />
         </a>
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">

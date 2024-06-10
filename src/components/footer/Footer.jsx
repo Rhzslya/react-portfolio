@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import "./footer.css";
 import { footerSectionsId } from "../header/sectionsId";
-
+import LogoNav from "../../asset/logo-navbar.png";
 export default function Footer({ handleNavLinkClick }) {
   return (
     <footer className="footer">
       <div className="footer__container container">
-        <h1 className="footer__title">Seira</h1>
+        <div className="box__logo">
+          <a href="">
+            <img className="footer__logo" src={LogoNav} alt="" />
+          </a>
+        </div>
 
         <ul className="footer__list">
           {footerSectionsId.map((sectionId, i) => (

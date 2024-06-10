@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./header.css";
 import { sectionsId } from "./sectionsId";
 import { iconsNav } from "./iconsNav";
+import LogoNav from "../../asset/logo-navbar.png";
 export default function Header({
   scrollHeader,
   handleNavLinkClick,
@@ -51,8 +52,8 @@ export default function Header({
   return (
     <header className={"header" + (scrollHeader ? " scroll-header" : "")}>
       <nav className="nav container">
-        <a href="" className="nav__logo">
-          <img src="logo-light-mode.png" alt="" />
+        <a href="">
+          <img className="nav__logo" src={LogoNav} alt="" />
         </a>
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">

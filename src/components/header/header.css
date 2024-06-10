@@ -21,7 +21,7 @@
   font-weight: var(--font-medium);
 }
 
-.nav__logo img {
+.nav__logo {
   width: 40px;
   display: block;
 }

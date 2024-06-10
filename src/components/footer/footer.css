@@ -11,6 +11,15 @@
 .footer__link {
   color: var(--title-color);
 }
+.box__logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.footer__logo {
+  width: 60px;
+  display: block;
+}
 
 .footer__link {
   text-transform: capitalize;
@@ -66,6 +75,13 @@
     padding: 0.25rem;
     border-radius: 0.25rem;
     font-size: 1rem;
+  }
+
+  .box__logo {
+    margin-bottom: 1rem;
+  }
+  .footer__logo {
+    width: 45px;
   }
 }
 

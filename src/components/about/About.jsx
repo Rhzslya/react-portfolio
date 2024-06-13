@@ -1,6 +1,6 @@
 import React, { Children, useEffect, useRef } from "react";
 import "./about.css";
-import AboutImg from "../../asset/about.png";
+import AboutImg from "../../asset/profile-about.jpg";
 
 import Info from "./Info";
 import Description from "./Description";

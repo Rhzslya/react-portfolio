@@ -76,7 +76,7 @@ export default function ClockAndLocation() {
       <small className="local__time-content">
         <span>{cTimes}</span>
         <span>
-          {geoInfo.city}, {geoInfo.country}
+          {geoInfo ? `${geoInfo.city}, ${geoInfo.country}` : "Unknown"}
         </span>{" "}
       </small>
     </div>

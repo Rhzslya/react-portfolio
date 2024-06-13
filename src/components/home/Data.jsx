@@ -25,8 +25,8 @@ export default function Data({ handleNavLinkClick }) {
       <h3 className="home__subtitle">{text}</h3>
 
       <p className="home__description">
-        I am a junior Fullstack Developer Based in Indonesia, and I'm very
-        passionate and dedicated to my work.
+        I am a Junior Developer Based in Indonesia, and I'm very passionate and
+        dedicated to my work.
       </p>
 
       <a

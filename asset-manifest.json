@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/rizqisabila/static/css/main.7c6350db.css",
-    "main.js": "/rizqisabila/static/js/main.c191ffe2.js",
+    "main.css": "/rizqisabila/static/css/main.19e15092.css",
+    "main.js": "/rizqisabila/static/js/main.d60d5c30.js",
     "static/js/453.dda0c704.chunk.js": "/rizqisabila/static/js/453.dda0c704.chunk.js",
+    "static/media/profile-main.png": "/rizqisabila/static/media/profile-main.d3a79991009e33f6b07f.png",
     "static/media/portfolioweb-1.png": "/rizqisabila/static/media/portfolioweb-1.f6cca57cd7544ac12b0f.png",
+    "static/media/profile-about.jpg": "/rizqisabila/static/media/profile-about.43bb567222772cf6cdcb.jpg",
     "static/media/Rizqi-Sabilla-CV.pdf": "/rizqisabila/static/media/Rizqi-Sabilla-CV.e7f58e8f2206c1e3fce0.pdf",
     "static/media/logo-navbar.png": "/rizqisabila/static/media/logo-navbar.b98170525c211a1ff07a.png",
     "static/media/portfolioweb-2.png": "/rizqisabila/static/media/portfolioweb-2.556732e34d6c3e0503e2.png",
-    "static/media/about.png": "/rizqisabila/static/media/about.f63e9a2230ab3dcf2eaa.png",
     "static/media/Ryo-Profile.png": "/rizqisabila/static/media/Ryo-Profile.eec7eece986f1998a114.png",
     "static/media/mongodb-icon-2.svg": "/rizqisabila/static/media/mongodb-icon-2.60d7804b193743e04ba1b72124e7486d.svg",
     "static/media/bootstrap-5.svg": "/rizqisabila/static/media/bootstrap-5.a7f31ad7fe38d690a8f31171722b5279.svg",
@@ -30,12 +31,12 @@
     "static/media/bx-code-alt.svg": "/rizqisabila/static/media/bx-code-alt.0773ddc4e2a966e1c2b6074619aded40.svg",
     "static/media/bx-link-external.svg": "/rizqisabila/static/media/bx-link-external.5c88b023ad88d36f7c16482c66151c13.svg",
     "static/media/bxs-file.svg": "/rizqisabila/static/media/bxs-file.711bb3253c6513cc02ee6540d96d25d1.svg",
-    "main.7c6350db.css.map": "/rizqisabila/static/css/main.7c6350db.css.map",
-    "main.c191ffe2.js.map": "/rizqisabila/static/js/main.c191ffe2.js.map",
+    "main.19e15092.css.map": "/rizqisabila/static/css/main.19e15092.css.map",
+    "main.d60d5c30.js.map": "/rizqisabila/static/js/main.d60d5c30.js.map",
     "453.dda0c704.chunk.js.map": "/rizqisabila/static/js/453.dda0c704.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c6350db.css",
-    "static/js/main.c191ffe2.js"
+    "static/css/main.19e15092.css",
+    "static/js/main.d60d5c30.js"
   ]
 }

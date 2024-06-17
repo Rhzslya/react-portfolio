@@ -216,7 +216,7 @@
 
 @media screen and (max-width: 768px) {
   .project__modal-content {
-    max-width: 350px;
+    max-width: 100%;
   }
 
   .modal__close {
@@ -230,7 +230,8 @@
   }
 
   .project__modal-content {
-    max-width: 250px;
+    max-width: 100%;
+    padding: 12px;
   }
   .modal__img {
     height: 250px;

@@ -1,6 +1,7 @@
 import Ryo from "../../asset/Ryo-Profile.png";
 import PortfolioWeb1 from "../../asset/portfolioweb-1.png";
 import PortfolioWeb2 from "../../asset/portfolioweb-2.png";
+import Flugenime from "../../asset/flugelnime.png";
 import fileIcon from "../../asset/bxs-file.svg";
 import userIcon from "../../asset/bx-user-circle.svg";
 import linkIcon from "../../asset/bx-link-external.svg";
@@ -8,11 +9,11 @@ import langIcon from "../../asset/bx-code-alt.svg";
 import dateIcon from "../../asset/date.svg";
 export const projectData = [
   {
-    id: 1,
-    name: "Web Portfolio With Vanilla JS",
-    img: PortfolioWeb1,
+    id: 3,
+    name: "Flugelnime",
+    img: Flugenime,
     projectType: "Website",
-    link: "https://rhzslya.github.io/rizqi-sabilla.github.io/",
+    link: "https://rhzslya.github.io/flugelnime/",
     details: [
       {
         icon: fileIcon,
@@ -22,21 +23,21 @@ export const projectData = [
       {
         icon: userIcon,
         title: "Client",
-        desc: "Nava",
+        desc: "-",
       },
       {
         icon: langIcon,
         title: "Language",
-        desc: "HTML, CSS, Javascript",
+        desc: "React, TailwindCSS",
       },
-
       {
         icon: dateIcon,
         title: "Date Created",
-        desc: "12-03-2024",
+        desc: "17-06-2024",
       },
     ],
   },
+
   {
     id: 2,
     name: "Web Portfolio With React",
@@ -67,11 +68,11 @@ export const projectData = [
     ],
   },
   {
-    id: 3,
-    name: "Contact App Via CLI",
-    img: Ryo,
+    id: 1,
+    name: "Web Portfolio With Vanilla JS",
+    img: PortfolioWeb1,
     projectType: "Website",
-    link: "www.ryo.com",
+    link: "https://rhzslya.github.io/rizqi-sabilla.github.io/",
     details: [
       {
         icon: fileIcon,
@@ -88,64 +89,7 @@ export const projectData = [
         title: "Language",
         desc: "HTML, CSS, Javascript",
       },
-      {
-        icon: dateIcon,
-        title: "Date Created",
-        desc: "12-03-2024",
-      },
-    ],
-  },
-  {
-    id: 4,
-    name: "Contact App Via CLI",
-    img: Ryo,
-    projectType: "Website",
-    link: "www.ryo.com",
-    details: [
-      {
-        icon: fileIcon,
-        title: "Project",
-        desc: "Website",
-      },
-      {
-        icon: userIcon,
-        title: "Client",
-        desc: "Nava",
-      },
-      {
-        icon: langIcon,
-        title: "Language",
-        desc: "HTML, CSS, Javascript",
-      },
-      {
-        icon: dateIcon,
-        title: "Date Created",
-        desc: "12-03-2024",
-      },
-    ],
-  },
-  {
-    id: 5,
-    name: "Contact App Via CLI",
-    img: Ryo,
-    projectType: "Website",
-    link: "www.ryo.com",
-    details: [
-      {
-        icon: fileIcon,
-        title: "Project",
-        desc: "Website",
-      },
-      {
-        icon: userIcon,
-        title: "Client",
-        desc: "Nava",
-      },
-      {
-        icon: langIcon,
-        title: "Language",
-        desc: "HTML, CSS, Javascript",
-      },
+
       {
         icon: dateIcon,
         title: "Date Created",
